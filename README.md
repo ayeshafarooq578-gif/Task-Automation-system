@@ -118,7 +118,7 @@ Create a `.env` file inside the backend folder.
 Example:
 
 ```env
-PORT=5003
+PORT=****
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_secret_key
 EMAIL_USER=your_email
