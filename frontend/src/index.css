@@ -1,0 +1,274 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root */
+
+:root {
+  --bg-dark: #07121f;
+  --bg-light: #0d1b2a;
+  --glass: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.08);
+  --primary: #49d6d6;
+  --text: #ffffff;
+}
+
+/* Body */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #07121f,
+    #0d1b2a,
+    #08131f
+  );
+
+  color: white;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+}
+
+/* Root Div */
+
+#root {
+  min-height: 100vh;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lists */
+
+ul {
+  list-style: none;
+}
+
+/* Buttons */
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Inputs */
+
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1220;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #49d6d6;
+  border-radius: 10px;
+}
+
+/* Glass Effect */
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(15px);
+
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  border-radius: 20px;
+}
+
+/* Common Containers */
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Auth Pages */
+
+.auth-container {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.auth-box {
+  width: 450px;
+
+  padding: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.auth-box h1 {
+  text-align: center;
+
+  margin-bottom: 15px;
+
+  font-size: 32px;
+}
+
+.auth-box input {
+  height: 55px;
+
+  padding-left: 15px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: white;
+}
+
+.auth-box input::placeholder {
+  color: #ccc;
+}
+
+.auth-box button {
+  height: 55px;
+
+  border-radius: 40px;
+
+  background: #49d6d6;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.auth-box button:hover {
+  transform: scale(1.03);
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 80px;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 35px;
+
+  padding-top: 100px;
+}
+
+/* Cards */
+
+.cards {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 20px;
+
+  margin-top: 20px;
+}
+
+.card {
+  padding: 25px;
+
+  min-height: 180px;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+
+  text-align: left;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Status Badges */
+
+.status {
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+}
+
+.pending {
+  background: orange;
+}
+
+.progress {
+  background: #49d6d6;
+}
+
+.completed {
+  background: green;
+}

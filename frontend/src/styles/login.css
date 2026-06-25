@@ -1,0 +1,56 @@
+.auth-container{
+
+ display:flex;
+
+ justify-content:center;
+
+ align-items:center;
+
+ min-height:100vh;
+}
+
+.auth-box{
+
+ width:500px;
+
+ padding:40px;
+
+ display:flex;
+
+ flex-direction:column;
+
+ gap:20px;
+}
+
+.auth-box input{
+
+ height:55px;
+
+ border:none;
+
+ outline:none;
+
+ background:
+ rgba(255,255,255,0.05);
+
+ color:white;
+
+ border-radius:12px;
+
+ padding-left:15px;
+}
+
+.auth-box button{
+
+ height:55px;
+
+ border:none;
+
+ cursor:pointer;
+
+ border-radius:50px;
+
+ background:#49d6d6;
+
+ font-size:18px;
+}
